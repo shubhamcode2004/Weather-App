@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Dancing+Script:wght@500&family=El+Messiri&family=Roboto+Slab&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+/* font-family: 'Combo', cursive; */
+/* font-family: 'Dancing Script', cursive; */
+/* font-family: 'El Messiri', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weatherbackground {
+    background: url(https://images.pexels.com/photos/4983247/pexels-photo-4983247.jpeg?auto=compress&cs=tinysrgb&w=600);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+    color: white;
+    font-size: 4rem;
+    font-family: 'El Messiri', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttons button {
+    border-radius: 36px;
 }
 
-.App-link {
-  color: #61dafb;
+.weatherResultBox {
+    margin: auto;
+    width: 40vw;
+    height: 300px;
+    border: 2px solid grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weatherResultBox img {
+    margin-top: 2rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 22px;
+}
+
+.weatherCity {
+    font-size: 40px;
+}
+
+.weatherTemp {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+@media (max-width: 800px) {
+    .buttons {
+        width: 60vw;
+    }
+    .weatherResultBox {
+        margin: auto;
+        width: 80vw;
+        height: 300px;
+        border: 2px solid grey;
+    }
 }
